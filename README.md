@@ -14,6 +14,12 @@ Sometimes you get strings from the internet and need to quote them for security,
 other times you'll need to quote your own strings because doing it by hand is
 just too much work.
 
+Another option is <a href="http://github.com/kballard/go-shellquote">http://github.com/kballard/go-shellquote</a>.  The quoting algorithms are
+completely different and the results vary as well, but both produce working
+results in my brief testing.  See
+<a href="https://github.com/frioux/go-scraps/tree/master/cmd/quotetest">https://github.com/frioux/go-scraps/tree/master/cmd/quotetest</a> for a tool that
+shows the results of quoting with each package.
+
 
 
 #### <a name="example_">Example</a>
@@ -54,7 +60,7 @@ byte.
 
 
 
-## <a name="Quote">func</a> [Quote](https://github.com/frioux/shellquote/tree/master/shellquote.go?s=520:559#L21)
+## <a name="Quote">func</a> [Quote](https://github.com/frioux/shellquote/tree/master/shellquote.go?s=845:884#L27)
 ``` go
 func Quote(in []string) (string, error)
 ```

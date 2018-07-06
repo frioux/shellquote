@@ -4,6 +4,12 @@ shellquote quotes strings for shell scripts.
 Sometimes you get strings from the internet and need to quote them for security,
 other times you'll need to quote your own strings because doing it by hand is
 just too much work.
+
+Another option is http://github.com/kballard/go-shellquote.  The quoting algorithms are
+completely different and the results vary as well, but both produce working
+results in my brief testing.  See
+https://github.com/frioux/go-scraps/tree/master/cmd/quotetest for a tool that
+shows the results of quoting with each package.
 */
 package shellquote
 
